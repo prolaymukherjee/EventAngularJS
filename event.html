@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<title>This is AngularJs Framwork</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	</head>
+	 <body>
+		<div ng-controller="myController">
+			<button ng-click="count=count+1">click</button>
+			<h3>{{count}}</h3>
+		</div>
+		<script>
+			var app=angular.module('myApp',[]);
+			app.controller('myController',function($scope){
+				$scope.count=0;
+			});
+		</script>
+	</body>
+</html>
